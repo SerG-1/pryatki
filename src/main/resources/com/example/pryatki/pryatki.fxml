@@ -16,11 +16,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="346.0" layoutY="571.0" mnemonicParsing="false" onAction="#test" prefHeight="42.0" prefWidth="150.0" text="Применить">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
+      <Button fx:id="button" text="Нажми меня!" onAction="#handleButtonClick" />
       <Button fx:id="pauseResumeButton" disable="true" onAction="#pauseResumeTimer" text="Пауза/Возобновить" />
       <Button fx:id="plus" layoutX="646.0" layoutY="171.0" mnemonicParsing="false" onAction="#increaseMinutes" prefHeight="42.0" prefWidth="66.0" text="+" />
       <Label layoutX="899.0" layoutY="127.0" prefHeight="48.0" prefWidth="154.0" text="Раунд">
@@ -38,7 +34,13 @@
             <Font size="36" />
          </font>
       </Label>
-      <VBox fx:id="playerNamesBox" layoutX="111.0" layoutY="190.0" spacing="10">
+
+      <VBox fx:id="playerNamesBoxBlue" layoutX="611.0" layoutY="190.0" spacing="10">
+         <children>
+            <!-- Add dynamically created text fields here -->
+         </children>
+      </VBox>
+      <VBox fx:id="playerNamesBoxRed" layoutX="1411.0" layoutY="190.0" spacing="10">
          <children>
             <!-- Add dynamically created text fields here -->
          </children>

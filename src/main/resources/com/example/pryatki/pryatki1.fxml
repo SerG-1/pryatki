@@ -3,21 +3,51 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import com.example.pryatki.Controller1?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810" prefWidth="1192" styleClass="body" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pryatki.Controller">
-    <children>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810" prefWidth="1192" styleClass="body" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pryatki.Controller1">
 
-    <Label fx:id="plable" layoutX="111.0" layoutY="123.0" prefHeight="56.0" prefWidth="168.0" text="Игроков">
+
+
+    <Label fx:id="labelblue" layoutX="200.0" layoutY="74.0" prefHeight="53.0" prefWidth="300.0" textFill="WHITE" text="Синие">
         <font>
-            <Font size="39.0" />
+            <Font size="36" />
         </font>
     </Label>
-    <VBox fx:id="playerNamesBox1" layoutX="111.0" layoutY="190.0" spacing="10">
+    <Label fx:id="labelred" layoutX="800.0" layoutY="74.0" prefHeight="53.0" prefWidth="300.0" textFill="WHITE" text="Красные">
+        <font>
+            <Font size="36" />
+        </font>
+    </Label>
+
+
+
+
+                        <VBox fx:id="playerNamesBox1" layoutX="111.0" layoutY="190.0" spacing="10">
+                    <children>
+                        <!-- Add dynamically created text fields here -->
+                    </children>
+                </VBox>
+
+                    <VBox fx:id="playerNamesBox3" layoutX="310.0" layoutY="190.0" spacing="10">
+                        <children>
+                            <!-- Add dynamically created text fields here -->
+                        </children>
+                    </VBox>
+
+
+
+
+
+
+
+
+    <VBox fx:id="playerNamesBox2" layoutX="811.0" layoutY="190.0" spacing="10">
         <children>
             <!-- Add dynamically created text fields here -->
         </children>
     </VBox>
-    </children>
 </AnchorPane>
